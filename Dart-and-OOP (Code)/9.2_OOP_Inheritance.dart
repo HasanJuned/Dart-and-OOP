@@ -1,4 +1,4 @@
-class employeeDetails {
+class EmployeeDetails {
   String name = '';
   int age = 0;
 
@@ -14,12 +14,12 @@ class employeeDetails {
 // inheritance <---
 
 /// inherit korte hole extends korte hoy parent class ke
-class employeeOne extends employeeDetails {
+class EmployeeOne extends EmployeeDetails {
   /// String name;
   /// int age;
   /// printEmployeeDetails();
 
-  // employeeOne(String name, int age) {
+  // EmployeeOne(String name, int age) {
   //   this.name = name;
   //   this.age = age;
   // }
@@ -32,7 +32,7 @@ class employeeOne extends employeeDetails {
   }
 }
 
-class employeeTwo extends employeeDetails {
+class EmployeeTwo extends EmployeeDetails {
   /// String name;
   /// int age;
   /// printEmployeeDetails();
@@ -46,17 +46,17 @@ class employeeTwo extends employeeDetails {
 }
 
 void main() {
-  // employeeOne ob = new employeeOne("Hasan Ahmad", 21);
+  // EmployeeOne ob = new EmployeeOne("Hasan Ahmad", 21);
   // ob.display();
 
   // employee 1
-  employeeOne ob1 = new employeeOne();
+  EmployeeOne ob1 = new EmployeeOne();
   ob1.name = 'Hasan Ahmad';
   ob1.age = 21;
   ob1.printEmployeeDetails();
 
   /// employee 2
-  employeeTwo ob2 = new employeeTwo();
+  EmployeeTwo ob2 = new EmployeeTwo();
   ob2.name = 'Rahat Alam';
   ob2.age = 22;
   ob2.qualification = 'Web Developer';

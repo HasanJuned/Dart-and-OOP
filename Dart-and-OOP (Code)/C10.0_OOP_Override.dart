@@ -1,6 +1,6 @@
 // Method override
 
-class parents {
+class Parents {
   int house = 2;
   int car = 5;
 
@@ -10,7 +10,7 @@ class parents {
   }
 }
 
-class son extends parents {
+class Son extends Parents {
   // @override // variable override
   // int car = 8;
 
@@ -24,6 +24,6 @@ class son extends parents {
 }
 
 void main() {
-  son ob = new son();
+  Son ob = new Son();
   ob.display();
 }

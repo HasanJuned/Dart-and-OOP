@@ -2,11 +2,11 @@
 // object is not applicable for abstract class
 // abstract class inherit using 'implements' keyword
 
-abstract class letter {
+abstract class Letter {
   void write();
 }
 
-class hasanLetter implements letter {
+class HasanLetter implements Letter {
   @override
   void write() {
     print('I wanna goto canada');
@@ -17,7 +17,7 @@ class hasanLetter implements letter {
   }
 }
 
-class rahatLetter implements letter {
+class RahatLetter implements Letter {
   @override
   void write() {
     print('I wanna goto germany');
@@ -31,19 +31,19 @@ class rahatLetter implements letter {
 void main() {
   // no object support for abstract class
 
-  hasanLetter ob = new hasanLetter();
+  HasanLetter ob = new HasanLetter();
   ob.write();
   ob.display();
 
-  rahatLetter ob1 = new rahatLetter();
+  RahatLetter ob1 = new RahatLetter();
   ob1.write();
   ob1.display();
 
   // // using polymorphism
-  // letter ob2 = new hasanLetter();
+  // Letter ob2 = new HasanLetter();
   // ob2.write();
   // ob2.display(); // can't call by this cause of polymorphism
 
-  // ob2 = new rahatLetter();
+  // ob2 = new RahatLetter();
   // ob2.write();
 }

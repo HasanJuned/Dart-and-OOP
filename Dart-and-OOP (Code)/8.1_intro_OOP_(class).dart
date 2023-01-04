@@ -5,7 +5,7 @@
 // class - blueprint
 // object - real world
 
-class man {
+class Man {
   // attributes / variables
   // (String? name;) -> null safety (variable can be store null)
   String name = 'Hasan';
@@ -14,24 +14,24 @@ class man {
   String address = '';
 
   // constructor -> same name of its own class (class name is man so constructor name is man)
-  // man(String n, int a, double h, String add) {
+  // Man(String n, int a, double h, String add) {
   //   name = n;
   //   age = a;
   //   height = h;
   //   address = add;
   // }
-  man();
+  Man();
 }
 
 void main() {
   // object creation -> (hasan, rahat)
-  man hasan = man();
+  Man hasan = Man();
   print(hasan.name);
   print(hasan.age = 21);
   print(hasan.height = 5.4);
   print(hasan.address = 'Sylhet');
 
-  man rahat = man();
+  Man rahat = Man();
   rahat.name = 'Rahat';
   print(rahat.name);
   int totalAge = rahat.age * 12;

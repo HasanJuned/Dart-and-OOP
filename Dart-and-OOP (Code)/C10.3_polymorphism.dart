@@ -1,7 +1,7 @@
 // polymorphism
 // abstract class inherit using 'extends' keyword
 
-abstract class letter {
+abstract class Letter {
   void write();
 
   void display() {
@@ -9,7 +9,7 @@ abstract class letter {
   }
 }
 
-class hasanLetter extends letter {
+class HasanLetter extends Letter {
   // inherit the display(); method from super class
   @override
   void write() {
@@ -22,7 +22,7 @@ class hasanLetter extends letter {
   }
 }
 
-class rahatLetter extends letter {
+class RahatLetter extends Letter {
   // inherit the display(); method from super class
   @override
   void write() {
@@ -34,7 +34,7 @@ class rahatLetter extends letter {
   }
 }
 
-class sammunLetter extends letter {
+class SammunLetter extends Letter {
   // inherit the display(); method from super class
   @override
   void write() {
@@ -47,16 +47,16 @@ class sammunLetter extends letter {
 }
 
 void main() {
-  letter ob1 = new hasanLetter();
+  Letter ob1 = new HasanLetter();
   ob1.write();
   ob1.display();
 
-  ob1 = new rahatLetter();
+  ob1 = new RahatLetter();
   ob1.write();
   ob1.display();
   // ob2.printInfo(); // can't call because polymorphism
 
-  ob1 = new sammunLetter();
+  ob1 = new SammunLetter();
   ob1.write();
   // ob1.printInfo();  // can't call because polymorphism
 }
